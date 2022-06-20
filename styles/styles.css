@@ -25,6 +25,10 @@ header {
           box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
 }
 
+header .brand_logo {
+  z-index: 5;
+}
+
 header img {
   width: 70px;
   height: 70px;
@@ -114,7 +118,6 @@ header .mobile-menu.active ul li {
   -webkit-box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
           box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
   width: 100%;
-  text-align: center;
 }
 
 header .menu {
@@ -143,12 +146,12 @@ header .menu {
     margin: 2px 0;
   }
   .menu.active .bar:nth-of-type(1) {
-    -webkit-transform: rotateZ(35deg);
-            transform: rotateZ(35deg);
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
   }
   .menu.active .bar:nth-of-type(2) {
-    -webkit-transform: rotateZ(155deg);
-            transform: rotateZ(155deg);
+    -webkit-transform: translateY(-5px) rotateZ(-45deg);
+            transform: translateY(-5px) rotateZ(-45deg);
   }
   .menu.active .bar:nth-of-type(3) {
     -webkit-transform: scale(0);
