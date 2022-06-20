@@ -252,7 +252,6 @@ main p img {
           align-items: center;
   background: #1f0231 url("../images/Group 12.png");
   background-size: 100% 100%;
-  background-position: center;
   background-repeat: no-repeat;
   place-items: center;
   max-height: -webkit-fit-content;
@@ -266,7 +265,7 @@ main p img {
 }
 
 .our-target div {
-  border: 2px solid #eee8f2;
+  border: 2px solid rgba(238, 232, 242, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,20 +341,9 @@ main p img {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
-    padding-bottom: 40px;
+    padding-bottom: 100px;
   }
   .our-target div {
-    border: 2px solid #eee8f2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 180px;
     width: 180px;
     padding: 20px;

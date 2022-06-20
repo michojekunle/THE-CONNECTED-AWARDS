@@ -207,7 +207,6 @@ main {
     align-items: center;
     background:rgba(31, 2, 49, 1) url('../images/Group\ 12.png');
     background-size: 100% 100%;
-    background-position: center;
     background-repeat: no-repeat;
     place-items: center;
     max-height: fit-content;
@@ -217,7 +216,7 @@ main {
     }
 
     div {
-        border: 2px solid $primary-color-2;
+        border: 2px solid rgba(238, 232, 242, .5);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -263,13 +262,9 @@ main {
     .our-target {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 1fr);
-        padding-bottom: 40px;
+        padding-bottom: 100px;
 
         div {
-            border: 2px solid $primary-color-2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             height: 180px;
             width:180px;
             padding: 20px;
@@ -308,6 +303,7 @@ main {
         }
      }
 }     
+
 
 
 
