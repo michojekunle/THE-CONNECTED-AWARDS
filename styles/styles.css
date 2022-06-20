@@ -165,4 +165,69 @@ header .menu {
     display: none;
   }
 }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+main .search_menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main input {
+  width: 40%;
+  padding: 6px 18px;
+}
+
+main button {
+  margin-left: 20px;
+  color: white;
+  background-color: #3e0563;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 7px 18px;
+}
+
+main p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 12px;
+  font-size: 1.5rem;
+}
+
+main p img {
+  padding-left: 8px;
+}
 /*# sourceMappingURL=styles.css.map */
