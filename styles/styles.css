@@ -74,8 +74,8 @@ header ul li .sign-up {
 header .mobile-menu {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 header .mobile-menu.active {
@@ -87,9 +87,9 @@ header .mobile-menu.active {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: #eee8f2;
-  -webkit-transform: translateY(200px) translateX(-48px);
-          transform: translateY(200px) translateX(-48px);
+  background: white;
+  -webkit-transform: translateY(250px) translateX(-48px);
+          transform: translateY(250px) translateX(-48px);
   z-index: 2;
 }
 
@@ -118,7 +118,7 @@ header .mobile-menu.active ul span {
 }
 
 header .mobile-menu.active ul li {
-  margin: 10px 0;
+  margin: 15px 0;
   padding: 8px 0;
   -webkit-box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
           box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
@@ -142,6 +142,8 @@ header .menu {
     z-index: 5;
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .menu .bar {
     background: #3e0563;
