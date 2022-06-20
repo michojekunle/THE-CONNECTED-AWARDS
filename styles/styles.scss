@@ -304,7 +304,16 @@ main {
      }
 }     
 
+.connected-awards {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
 
+    .caw-image {
+        width:50%
+    }
+
+}
 
 
 
