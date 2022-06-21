@@ -17,6 +17,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 12vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -183,6 +184,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 76vh;
 }
 
 main h1 {
