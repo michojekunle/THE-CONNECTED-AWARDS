@@ -557,15 +557,20 @@ main p img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
   .celebrated-techies .cte-images {
-    width: 80vw;
+    width: 100vw;
     display: -ms-grid;
     display: grid;
     grid-gap: 20px;
   }
+  .celebrated-techies .cte-images img {
+    width: 100%;
+  }
   .celebrated-techies .about-celebrated-techies {
-    margin-bottom: 150px;
+    margin-bottom: 180px;
+    margin-left: 20px;
   }
   .celebrated-techies .about-celebrated-techies h1.title {
     font-size: 2rem;

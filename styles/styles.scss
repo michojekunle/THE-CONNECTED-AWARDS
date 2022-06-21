@@ -447,17 +447,19 @@ main {
     .celebrated-techies {
         display:flex;
         flex-direction: column;
+        padding:0;
         .cte-images {
-            width:80vw;
+            width:100vw;
             display:grid;
             grid-gap: 20px;
 
             img {
-                wi
+                width: 100%;
             }
         }
         .about-celebrated-techies{
-            margin-bottom: 150px;
+            margin-bottom: 180px;
+            margin-left: 20px;
             h1.title {
                 font-size: 2rem;
             }
@@ -474,3 +476,4 @@ main {
     }
   }   
 }
+
