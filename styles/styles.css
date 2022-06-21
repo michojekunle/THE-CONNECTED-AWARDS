@@ -585,4 +585,34 @@ main p img {
     padding: 6px 15px;
   }
 }
+
+.talents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 80px 0;
+}
+
+.talents .talent {
+  height: 300px;
+  width: 270px;
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(219, 219, 219, 0.5);
+          box-shadow: 1px 1px 8px 0px rgba(219, 219, 219, 0.5);
+  border-radius: 5px;
+  margin: 20px 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+.talents .talent .image {
+  height: 30%;
+}
 /*# sourceMappingURL=styles.css.map */

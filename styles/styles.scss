@@ -477,3 +477,24 @@ main {
   }   
 }
 
+.talents {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+    .talent {
+        height: 300px;
+        width:270px;
+        box-shadow: 1px 1px 8px 0px rgba(219, 219, 219, 0.5);
+        border-radius: 5px;
+        margin: 20px 50px;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 20px;
+
+        .image {
+            height:30%;
+        }
+    }
+}
