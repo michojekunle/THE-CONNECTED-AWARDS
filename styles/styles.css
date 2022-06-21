@@ -1,4 +1,4 @@
-.button-basic, header ul li .sign-up, main button, .connected-awards .about-connected-awards button {
+.button-basic, header ul li .sign-up, main button, .connected-awards .about-connected-awards button, .celebrated-techies .about-celebrated-techies button {
   border-radius: 5px;
   padding: 10px 18px;
   color: white;
@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 
-.short_underline, .connected-awards .about-connected-awards div.underline {
+.short_underline, .connected-awards .about-connected-awards div.underline, .celebrated-techies .about-celebrated-techies div.underline {
   width: 125px;
   height: 6px;
   border-radius: 8px;
@@ -413,8 +413,6 @@ main p img {
   display: flex;
   padding: 4vw;
   width: 90vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-image: url("../images/Group 21.png");
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -425,9 +423,14 @@ main p img {
   width: 43vw;
 }
 
+.connected-awards .caw-image img {
+  width: 100%;
+}
+
 .connected-awards .about-connected-awards {
   width: 43vw;
   font-size: 1.5rem;
+  padding-left: 40px;
 }
 
 .connected-awards .about-connected-awards h1.title {
@@ -488,14 +491,22 @@ main p img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 90vw;
   padding: 4vw;
+  background-image: url("../images/Group 21 (1).png");
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  background-position: bottom left;
 }
 
 .celebrated-techies .cte-images {
   width: 45vw;
   display: -ms-grid;
   display: grid;
+  grid-gap: 30px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
@@ -518,5 +529,81 @@ main p img {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+}
+
+.celebrated-techies .about-celebrated-techies {
+  font-size: 1.2rem;
+}
+
+.celebrated-techies .about-celebrated-techies h1.title {
+  font-size: 3rem;
+}
+
+.celebrated-techies .about-celebrated-techies p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.celebrated-techies .about-celebrated-techies button {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .celebrated-techies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90vw;
+    padding: 4vw;
+    background-image: url("../images/Group 21 (1).png");
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-position: bottom left;
+  }
+  .celebrated-techies .cte-images {
+    width: 45vw;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .celebrated-techies .cte-images img:nth-of-type(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .celebrated-techies .cte-images img:nth-of-type(4) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .celebrated-techies .about-celebrated-techies h1.title {
+    font-size: 2rem;
+  }
+  .celebrated-techies .about-celebrated-techies div.underline {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    width: 70px;
+  }
+  .celebrated-techies .about-celebrated-techies button {
+    font-size: 1.2rem;
+    padding: 6px 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
