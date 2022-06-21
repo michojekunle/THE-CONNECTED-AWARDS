@@ -553,45 +553,19 @@ main p img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 90vw;
-    padding: 4vw;
-    background-image: url("../images/Group 21 (1).png");
-    background-repeat: no-repeat;
-    background-size: 150px 150px;
-    background-position: bottom left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .celebrated-techies .cte-images {
-    width: 45vw;
+    width: 80vw;
     display: -ms-grid;
     display: grid;
-    grid-gap: 30px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
   }
-  .celebrated-techies .cte-images img:nth-of-type(1) {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-  .celebrated-techies .cte-images img:nth-of-type(4) {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
+  .celebrated-techies .about-celebrated-techies {
+    margin-bottom: 150px;
   }
   .celebrated-techies .about-celebrated-techies h1.title {
     font-size: 2rem;
