@@ -1,4 +1,4 @@
-.button-basic, header ul li .sign-up {
+.button-basic, header ul li .sign-up, header .mobile-CA .sign-up {
   border-radius: 5px;
   padding: 10px 18px;
   color: white;
@@ -76,5 +76,23 @@ header ul li .log-in {
   margin-left: 20px;
   color: #3e0563;
   background-color: #eee8f2;
+}
+
+header .mobile-CA {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 30px;
+  }
+  .mobile-CA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=caw.css.map */

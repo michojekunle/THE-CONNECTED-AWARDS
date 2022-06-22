@@ -73,6 +73,33 @@ header {
             .sign-up {
                 @extend .button-basic
             }
-        }        
+        }       
     }
+
+    .mobile-CA {
+        display: none;
+        
+        .sign-up {
+            @extend .button-basic
+        }
+    } 
+}
+
+@media screen and (max-width:768px) {
+    header {
+        padding:0 30px ;
+    }
+
+    .mobile-CA {
+        display: flex;
+           
+        .sign-up {
+            @extend .button-basic
+        }
+    } 
+
+    nav {
+        display: none;
+    }
+
 }
