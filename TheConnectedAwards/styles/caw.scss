@@ -131,6 +131,7 @@ main {
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
+        margin-bottom: 80px;
 
         .content {
             width: 40%;
@@ -146,10 +147,41 @@ main {
             }
 
         }
+        .image2 {
+            width: 50%;
+            img {
+                width: 80%;
+                margin-left: 20%;
+
+            }
+        }
     }
 }
 
 @media screen and (max-width:768px) {
+    
+    .header {
+        text-align: center;
+        margin: 20px 0;
+
+        h1 {
+            color: $primary-color-3;
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+
+        p {
+            color: rgba(128, 128, 128, 1);       
+        }
+    }
+
+    .caw-image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
     .secondRow {
         flex-direction: column;
         justify-content: center;
@@ -168,7 +200,13 @@ main {
                 font-size: 1.2rem;
                 font-weight: 300;
             }
-
+            
+        }
+        .image2 {
+            width: 100%;
+            img {
+                width: 100%;
+            }
         }
     }    
 }

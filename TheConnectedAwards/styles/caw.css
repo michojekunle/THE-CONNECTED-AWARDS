@@ -141,6 +141,7 @@ main .secondRow {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 main .secondRow .content {
@@ -157,7 +158,34 @@ main .secondRow .content p {
   font-weight: 300;
 }
 
+main .secondRow .image2 {
+  width: 50%;
+}
+
+main .secondRow .image2 img {
+  width: 80%;
+  margin-left: 20%;
+}
+
 @media screen and (max-width: 768px) {
+  .header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .header h1 {
+    color: #0c0114;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .header p {
+    color: gray;
+  }
+  .caw-image {
+    width: 100%;
+  }
+  .caw-image img {
+    width: 100%;
+  }
   .secondRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -181,6 +209,12 @@ main .secondRow .content p {
   .secondRow .content p {
     font-size: 1.2rem;
     font-weight: 300;
+  }
+  .secondRow .image2 {
+    width: 100%;
+  }
+  .secondRow .image2 img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=caw.css.map */
