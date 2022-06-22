@@ -637,4 +637,64 @@ main p img {
 .talents .talent .image {
   height: 30%;
 }
+
+footer {
+  background: #1f0231 url("../images/Group 42.svg");
+  background-size: 60% 105%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 40px 6vw;
+}
+
+footer .upperFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5rem;
+  margin-bottom: 150px;
+}
+
+footer .upperFooter div {
+  margin: 20px 40px;
+}
+
+footer .upperFooter p.title {
+  color: #fbbc05;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+footer .upperFooter p {
+  font-size: 1.5rem;
+}
+
+footer .upperFooter p a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .lowerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.4rem;
+}
+
+footer .lowerFooter div.image {
+  width: 50%;
+}
+
+footer .lowerFooter div.copyright {
+  width: 50%;
+}
 /*# sourceMappingURL=styles.css.map */
