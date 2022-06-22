@@ -282,6 +282,7 @@ main .main-container .container {
 
 main .main-container .container p {
   margin: 20px 0;
+  text-align: center;
 }
 
 main .main-container .container div.arrow {
@@ -295,5 +296,12 @@ main .main-container .container div.arrow {
 main .main-container .container div.arrow img {
   position: absolute;
   right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .container {
+    width: 180px;
+    height: 80px;
+  }
 }
 /*# sourceMappingURL=vtc.css.map */
