@@ -180,65 +180,44 @@ main {
         font-size: 2.8rem;
         font-weight: 700;
         text-align: center;
-    }
-    
-    .search_menu {
-        margin-top: 40px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    input {
-        width: 40%;
-        padding: 6px 18px;
-    }
-    button {
-        margin-left: 20px;
-        @extend .button-basic;
+        margin-top: 60px;
     }
 
     p {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 12px;
-        font-size:1.5rem;
-        
-        img {
-            padding-left: 8px;
-        }
+        color: #808080;
+        font-size: 12px;
+        margin: 10px 0;
+        text-align: center;
     }
+
     .main-container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         margin-top: 40px;
-
         .container {
-            width: 250px;
-            box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 130px;
-            margin: 20px 20px;
-            padding: 35px 0;
-
-            p {
-                margin: 20px 0 ;
-                text-align: center;
-            }
             
-            div.arrow {
-                display: flex;
-                width: 100%;
-                position: relative;
-                img {
-                    position: absolute;
-                    right: 20px;
+            .image {
+                width: 270px;
+                height: 220px;
+                background: #D1D1D6;
+
+
+                h3 {
+                    font-size: 1.8rem;
+                    font-weight: bolder;
+                    text-align: center;
+                }
+                p {
+                    margin: 20px 0 ;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    color: #3E0563;
                 }
             }
         }

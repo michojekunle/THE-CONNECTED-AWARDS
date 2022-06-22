@@ -1,4 +1,4 @@
-.button-basic, header ul li .sign-up, main button {
+.button-basic, header ul li .sign-up {
   border-radius: 5px;
   padding: 10px 18px;
   color: white;
@@ -203,44 +203,14 @@ main h1 {
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
-}
-
-main .search_menu {
-  margin-top: 40px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main input {
-  width: 40%;
-  padding: 6px 18px;
-}
-
-main button {
-  margin-left: 20px;
+  margin-top: 60px;
 }
 
 main p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 12px;
-  font-size: 1.5rem;
-}
-
-main p img {
-  padding-left: 8px;
+  color: #808080;
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 main .main-container {
@@ -259,9 +229,6 @@ main .main-container {
 }
 
 main .main-container .container {
-  width: 250px;
-  -webkit-box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
-          box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,27 +242,25 @@ main .main-container .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 130px;
-  margin: 20px 20px;
-  padding: 35px 0;
 }
 
-main .main-container .container p {
-  margin: 20px 0;
+main .main-container .container .image {
+  width: 270px;
+  height: 220px;
+  background: #D1D1D6;
+}
+
+main .main-container .container .image h3 {
+  font-size: 1.8rem;
+  font-weight: bolder;
   text-align: center;
 }
 
-main .main-container .container div.arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-
-main .main-container .container div.arrow img {
-  position: absolute;
-  right: 20px;
+main .main-container .container .image p {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3E0563;
 }
 
 @media screen and (max-width: 768px) {
