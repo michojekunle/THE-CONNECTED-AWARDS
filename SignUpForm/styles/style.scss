@@ -35,7 +35,7 @@ html {
 
 .container {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 300px;
+    width: 350px;
     height: 90vh;
     min-height: auto;
     background: $primary-color-2;
@@ -131,6 +131,12 @@ html {
         align-items: center;
         justify-content: center;
     }
- 
+    .form-footer {
+        padding-top: 8px;
+        font-size: .7rem;
+        text-align: center;
+        font-weight: bolder;
+    }
 
 }
+
