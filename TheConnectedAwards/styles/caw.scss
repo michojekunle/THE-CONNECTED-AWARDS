@@ -1,0 +1,217 @@
+//styles for the connected awards
+
+$primary-color-1 :rgba(62, 5, 99, 1);
+$primary-color-2 :rgba(238, 232, 242, 1);
+$primary-color-3 :rgba(12, 1, 20, 1);
+$primary-color-4 : rgba(255, 255, 255, 1);
+$secondary-color: rgba(251, 188, 5, 1);
+$footer-text-header:rgba(250, 151, 6, 1);
+
+ .button-basic{
+    border-radius: 5px;
+    padding:10px 18px;
+    color: $primary-color-4;
+    background-color: $primary-color-1;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items:center;
+    padding: 0 60px;
+    box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
+    
+   .brand_logo {
+      z-index: 5;
+   }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+            padding: 0 20px;
+            
+            a {
+                text-decoration: none;
+                color:$primary-color-3;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+
+            .log-in, .sign-up {
+                border-radius: 5px;
+                padding:10px 18px;
+            }
+
+            .log-in {
+                margin-left: 20px;
+                color: $primary-color-1;
+                background-color: $primary-color-2;
+            }
+
+            .sign-up {
+                @extend .button-basic
+            }
+        }       
+    }
+
+    .mobile-CA {
+        display: none;
+        
+        .sign-up {
+            @extend .button-basic
+        }
+    } 
+}
+
+@media screen and (max-width:768px) {
+    header {
+        padding:0 30px ;
+    }
+
+    nav {
+        li:nth-of-type(1), li:nth-of-type(2),
+         li:nth-of-type(3), li:nth-of-type(4),
+         li:nth-of-type(5), li:nth-of-type(6) {
+            display: none;
+         }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    .header {
+        text-align: center;
+        margin: 40px 0;
+
+        h1 {
+            color: $primary-color-3;
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+
+        p {
+            color: rgba(128, 128, 128, 1);       
+        }
+    }
+
+    .caw-image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .secondRow {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 80px;
+
+        .content {
+            width: 40%;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bolder;
+            }
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+
+        }
+        .image2 {
+            width: 50%;
+            img {
+                width: 80%;
+                margin-left: 20%;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    main {
+        padding: 0 20px;
+        .header {
+            text-align: center;
+            margin: 20px 0;
+    
+            h1 {
+                color: $primary-color-3;
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+    
+            p {
+                color: rgba(128, 128, 128, 1);       
+            }
+        }
+    
+        .caw-image {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    
+        .secondRow {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+    
+            .content {
+                width: 100%;
+    
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bolder;
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+    
+            }
+            .image2 {
+                width: 100%;
+                img {
+                    width: 100%;
+                    margin-left: 0;
+    
+                }
+            }
+        }
+    }   
+}

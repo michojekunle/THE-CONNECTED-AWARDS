@@ -365,8 +365,11 @@ main {
         flex-direction: column;
         .caw-image {
             width:100vw;
+            padding: 50px 0 ;
+            display: flex;
+            justify-content: center;
             img {
-                width: 100%;
+                width: 80%;
             }
         }
         .about-connected-awards {
@@ -479,6 +482,7 @@ main {
 
 .talents {
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -486,16 +490,79 @@ main {
     .talent {
         height: 300px;
         width:270px;
-        box-shadow: 1px 1px 8px 0px rgba(219, 219, 219, 0.5);
+        box-shadow: 0 0 5px 0px rgba(219, 219, 219, 0.8);
         border-radius: 5px;
         margin: 20px 50px;
         text-align: center;
         font-size: 1.6rem;
         padding: 20px;
 
+        h1{
+            color: $primary-color-1;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: $primary-color-3;
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 2rem;
+        }
         .image {
             height:30%;
         }
     }
 }
 
+footer{
+    background: rgba(31, 2, 49, 1) url('../images/Group\ 42.svg');
+    background-size: 60% 105%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 40px 6vw;
+    height: 100vh;
+    min-height: auto;
+
+    .upperFooter {
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        margin-bottom: 150px;
+
+        div {
+            margin: 20px 40px;
+
+        }
+
+        p.title {
+            color: $footer-text-header;
+            font-weight: 500;
+            font-size: 1.6rem;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            a {
+                text-decoration: none;
+                color: $primary-color-4;
+            }
+        }
+    }
+
+    .lowerFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary-color-4;
+        font-size: 1.4rem;
+        div.image {
+            width: 50%;
+        }
+        div.copyright {
+            width: 50%;
+            text-align: right;
+        }
+    }
+}

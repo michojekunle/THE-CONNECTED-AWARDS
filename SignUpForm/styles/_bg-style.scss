@@ -1,0 +1,104 @@
+//background style for log in and sign up pages
+body {
+    background: rgba(31, 2, 49, 1);
+    height:100vh;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.bg-images {
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    padding:20px 0;
+    div.left{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        img:nth-of-type(1){
+            transform: translate(-100px, 20px);
+            width:120px;
+        }
+        
+        img:nth-of-type(2){
+            transform: translate(50px, 65px);
+            width:60px;
+        }
+
+        img:nth-of-type(3){
+            transform: translate(20px, 200px);
+            width:120px;
+        }
+    }
+
+    div.right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        img {
+            width:120px;
+            align-self: flex-end;
+            margin: 20px;
+        }
+        
+        .img1 {
+            transform: translate(-50px, 20px);
+            width:60px;
+        }
+
+        .img2 {
+            transform: translate(-160px, 100px);
+            width:100px;
+        }
+
+        .img3 {
+            transform: translate(20px, 200px);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.bg-images {
+        display: none;
+    }
+
+    body {
+        background: none;
+    }
+
+}
+
+span{
+    color:rgba(251,  188, 5, 1);
+}
+
+button {
+    width: 100%;
+    background: rgba(62, 5, 99, 1);
+    border-radius: 5px;
+    text-align: center;
+    height: 30px;
+    margin: 20px 0 ;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    #submitButton {
+        background: none;
+        outline: none;
+        border: none;
+        color: #fff;
+    }
+}

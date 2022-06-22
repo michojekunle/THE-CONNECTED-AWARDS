@@ -1,0 +1,307 @@
+.button-basic, header ul li .sign-up, main button {
+  border-radius: 5px;
+  padding: 10px 18px;
+  color: white;
+  background-color: #3e0563;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.short_underline {
+  width: 125px;
+  height: 6px;
+  border-radius: 8px;
+  background: #fa9706;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 12vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 60px;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
+          box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
+}
+
+header .brand_logo {
+  z-index: 5;
+}
+
+header img {
+  width: 70px;
+  height: 70px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #0c0114;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+header ul li .log-in, header ul li .sign-up {
+  border-radius: 5px;
+  padding: 10px 18px;
+}
+
+header ul li .log-in {
+  margin-left: 20px;
+  color: #3e0563;
+  background-color: #eee8f2;
+}
+
+header .mobile-menu {
+  display: none;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+header .mobile-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  -webkit-transform: translateY(250px) translateX(-48px);
+          transform: translateY(250px) translateX(-48px);
+  z-index: 2;
+}
+
+header .mobile-menu.active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .mobile-menu.active ul span {
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 3rem;
+}
+
+header .mobile-menu.active ul li {
+  margin: 15px 0;
+  padding: 8px 0;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
+          box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
+  width: 100%;
+}
+
+header .menu {
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 30px;
+  }
+  .menu {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    width: 30px;
+    height: 50px;
+    z-index: 5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .menu .bar {
+    background: #3e0563;
+    width: 100%;
+    height: 4px;
+    border-radius: 8px;
+    margin: 3px 0;
+  }
+  .menu.active .bar:nth-of-type(1) {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  .menu.active .bar:nth-of-type(2) {
+    -webkit-transform: translateY(-5px) rotateZ(-45deg);
+            transform: translateY(-5px) rotateZ(-45deg);
+  }
+  .menu.active .bar:nth-of-type(3) {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  nav {
+    display: none;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 80px;
+}
+
+main h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+main .search_menu {
+  margin-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main input {
+  width: 40%;
+  padding: 6px 18px;
+}
+
+main button {
+  margin-left: 20px;
+}
+
+main p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 12px;
+  font-size: 1.5rem;
+}
+
+main p img {
+  padding-left: 8px;
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+main .main-container .container {
+  width: 250px;
+  -webkit-box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
+          box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 130px;
+  margin: 20px 20px;
+  padding: 35px 0;
+}
+
+main .main-container .container p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+main .main-container .container div.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+main .main-container .container div.arrow img {
+  position: absolute;
+  right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container .container {
+    width: 180px;
+    height: 80px;
+  }
+}
+/*# sourceMappingURL=vtc.css.map */

@@ -459,9 +459,16 @@ main p img {
   }
   .connected-awards .caw-image {
     width: 100vw;
+    padding: 50px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .connected-awards .caw-image img {
-    width: 100%;
+    width: 80%;
   }
   .connected-awards .about-connected-awards {
     width: 100%;
@@ -590,6 +597,8 @@ main p img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -603,8 +612,8 @@ main p img {
 .talents .talent {
   height: 300px;
   width: 270px;
-  -webkit-box-shadow: 1px 1px 8px 0px rgba(219, 219, 219, 0.5);
-          box-shadow: 1px 1px 8px 0px rgba(219, 219, 219, 0.5);
+  -webkit-box-shadow: 0 0 5px 0px rgba(219, 219, 219, 0.8);
+          box-shadow: 0 0 5px 0px rgba(219, 219, 219, 0.8);
   border-radius: 5px;
   margin: 20px 50px;
   text-align: center;
@@ -612,7 +621,83 @@ main p img {
   padding: 20px;
 }
 
+.talents .talent h1 {
+  color: #3e0563;
+  font-size: 2.5rem;
+}
+
+.talents .talent p {
+  color: #0c0114;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
 .talents .talent .image {
   height: 30%;
+}
+
+footer {
+  background: #1f0231 url("../images/Group 42.svg");
+  background-size: 60% 105%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 40px 6vw;
+  height: 100vh;
+  min-height: auto;
+}
+
+footer .upperFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5rem;
+  margin-bottom: 150px;
+}
+
+footer .upperFooter div {
+  margin: 20px 40px;
+}
+
+footer .upperFooter p.title {
+  color: #fa9706;
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+footer .upperFooter p {
+  font-size: 1.5rem;
+}
+
+footer .upperFooter p a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .lowerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.4rem;
+}
+
+footer .lowerFooter div.image {
+  width: 50%;
+}
+
+footer .lowerFooter div.copyright {
+  width: 50%;
+  text-align: right;
 }
 /*# sourceMappingURL=styles.css.map */
