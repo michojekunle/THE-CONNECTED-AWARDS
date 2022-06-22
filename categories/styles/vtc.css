@@ -193,13 +193,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 76vh;
+  padding: 0 80px;
 }
 
 main h1 {
@@ -244,5 +241,59 @@ main p {
 
 main p img {
   padding-left: 8px;
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+main .main-container .container {
+  width: 250px;
+  -webkit-box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
+          box-shadow: 0 0 8px 0px rgba(219, 219, 219, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 130px;
+  margin: 20px 20px;
+  padding: 35px 0;
+}
+
+main .main-container .container p {
+  margin: 20px 0;
+}
+
+main .main-container .container div.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+main .main-container .container div.arrow img {
+  position: absolute;
+  right: 20px;
 }
 /*# sourceMappingURL=vtc.css.map */
