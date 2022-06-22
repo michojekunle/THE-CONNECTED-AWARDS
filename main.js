@@ -6,7 +6,7 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('active');
 })
 
-const img = document.querySelectorAll('.voting-categories .main-container .container #open-image');
+const img = document.getElementById('open-image');
 const closeImg = document.getElementById('close-image');
 
 img.addEventListener('click', () => {
