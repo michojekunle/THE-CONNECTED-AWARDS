@@ -1,0 +1,78 @@
+//styles for the connected awards
+
+$primary-color-1 :rgba(62, 5, 99, 1);
+$primary-color-2 :rgba(238, 232, 242, 1);
+$primary-color-3 :rgba(12, 1, 20, 1);
+$primary-color-4 : rgba(255, 255, 255, 1);
+$secondary-color: rgba(251, 188, 5, 1);
+$footer-text-header:rgba(250, 151, 6, 1);
+
+ .button-basic{
+    border-radius: 5px;
+    padding:10px 18px;
+    color: $primary-color-4;
+    background-color: $primary-color-1;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items:center;
+    padding: 0 60px;
+    box-shadow: 0px 1px 0px 0px rgba(219, 219, 219, 0.5);
+    
+   .brand_logo {
+      z-index: 5;
+   }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            list-style: none;
+            padding: 0 20px;
+            
+            a {
+                text-decoration: none;
+                color:$primary-color-3;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+
+            .log-in, .sign-up {
+                border-radius: 5px;
+                padding:10px 18px;
+            }
+
+            .log-in {
+                margin-left: 20px;
+                color: $primary-color-1;
+                background-color: $primary-color-2;
+            }
+
+            .sign-up {
+                @extend .button-basic
+            }
+        }        
+    }
+}
