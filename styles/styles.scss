@@ -521,6 +521,8 @@ footer{
     background-position: bottom right;
     background-repeat: no-repeat;
     padding: 40px 6vw;
+    height: 100vh;
+    min-height: auto;
 
     .upperFooter {
         display:flex;
@@ -560,6 +562,7 @@ footer{
         }
         div.copyright {
             width: 50%;
+            text-align: right;
         }
     }
 }

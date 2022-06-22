@@ -644,6 +644,8 @@ footer {
   background-position: bottom right;
   background-repeat: no-repeat;
   padding: 40px 6vw;
+  height: 100vh;
+  min-height: auto;
 }
 
 footer .upperFooter {
@@ -696,5 +698,6 @@ footer .lowerFooter div.image {
 
 footer .lowerFooter div.copyright {
   width: 50%;
+  text-align: right;
 }
 /*# sourceMappingURL=styles.css.map */
