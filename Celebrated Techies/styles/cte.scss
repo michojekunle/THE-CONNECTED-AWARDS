@@ -227,3 +227,36 @@ main {
         }
     }
 }
+
+.imagePopUpActive {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    z-index: 10;
+    display:none;
+    flex-direction: column;
+
+    p {
+        position: relative;
+        left: 90%;
+        font-size: 40px;
+        color:#D1D1D6;
+    }
+
+    .image {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 40%;
+            height: 60vh;
+        }
+    }
+
+
+
+}

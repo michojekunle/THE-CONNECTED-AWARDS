@@ -265,4 +265,43 @@ main .main-container .container p {
   font-size: 1.2rem;
   color: #3E0563;
 }
+
+.imagePopUpActive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.imagePopUpActive p {
+  position: relative;
+  left: 90%;
+  font-size: 40px;
+  color: #D1D1D6;
+}
+
+.imagePopUpActive .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagePopUpActive .image img {
+  width: 40%;
+  height: 60vh;
+}
 /*# sourceMappingURL=cte.css.map */

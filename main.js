@@ -5,3 +5,10 @@ menuButton.addEventListener('click', () => {
     hiddenMenu.classList.toggle('active');
     menuButton.classList.toggle('active');
 })
+
+const img = document.querySelectorAll('.imagePopUp');
+const closeImg = document.getElementById('close-image');
+
+img.addEventListener('click', () => {
+    document.querySelector('.imagePopUpActive').style
+})
