@@ -99,4 +99,76 @@ header {
     }
 }
 
-.
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    .header {
+        text-align: center;
+        margin: 40px 0;
+
+        h1 {
+            color: $primary-color-3;
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+
+        p {
+            color: rgba(128, 128, 128, 1);       
+        }
+    }
+
+    .caw-image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .secondRow {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        .content {
+            width: 40%;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bolder;
+            }
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .secondRow {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        .content {
+            width: 100%;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+        }
+    }    
+}
