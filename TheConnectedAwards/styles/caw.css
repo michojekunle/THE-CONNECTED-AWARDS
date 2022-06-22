@@ -168,25 +168,31 @@ main .secondRow .image2 img {
 }
 
 @media screen and (max-width: 768px) {
-  .header {
+  main {
+    padding: 0 20px;
+  }
+  main .header {
     text-align: center;
     margin: 20px 0;
   }
-  .header h1 {
+  main .header h1 {
     color: #0c0114;
     font-size: 2rem;
     font-weight: bolder;
   }
-  .header p {
+  main .header p {
     color: gray;
   }
-  .caw-image {
+  main .caw-image {
     width: 100%;
   }
-  .caw-image img {
+  main .caw-image img {
     width: 100%;
   }
-  .secondRow {
+  main .secondRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -194,27 +200,26 @@ main .secondRow .image2 img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
-  .secondRow .content {
+  main .secondRow .content {
     width: 100%;
   }
-  .secondRow .content h1 {
+  main .secondRow .content h1 {
     font-size: 2rem;
     font-weight: bolder;
   }
-  .secondRow .content p {
+  main .secondRow .content p {
     font-size: 1.2rem;
     font-weight: 300;
   }
-  .secondRow .image2 {
+  main .secondRow .image2 {
     width: 100%;
   }
-  .secondRow .image2 img {
+  main .secondRow .image2 img {
     width: 100%;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=caw.css.map */
