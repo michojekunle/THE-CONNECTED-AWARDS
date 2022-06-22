@@ -286,6 +286,7 @@ main .main-container .container p {
   left: 90%;
   font-size: 40px;
   color: #D1D1D6;
+  cursor: pointer;
 }
 
 .imagePopUpActive .image {
