@@ -6,13 +6,17 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.toggle('active');
 })
 
-const img = document.querySelector('.image');
+const img = document.querySelectorAll('.image');
 const closeImg = document.getElementById('close-image');
 
-img.addEventListener('click', () => {
-    document.querySelector('.imagePopUpActive').style.display = "flex";
-})
+img.forEach(function(image) {
+    image.addEventListener('click', () => {
+        document.querySelector('.imagePopUpActive').style.display = "flex";
+  })
+});
 
 closeImg.addEventListener('click', () => {
     document.querySelector('.imagePopUpActive').style.display = "none";
-})
+});
+
+
